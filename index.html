@@ -5,47 +5,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nas Tech Innovations</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 <body>
+  <!-- Header / Hero -->
   <header>
-    <h1>Nas Tech Innovations</h1>
-    <p>Innovating the Future, Today.</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <div class="hero-content">
+      <h1>Nas Tech Innovations</h1>
+      <p>Your Partner in Cutting-Edge IT Solutions</p>
+      <a href="#contact" class="btn">Get In Touch</a>
+    </div>
+    <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_tutvdkg0.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
   </header>
 
+  <!-- About Section -->
   <section id="about">
     <h2>About Us</h2>
-    <p>Nas Tech Innovations is a forward-thinking tech company specializing in cutting-edge solutions.</p>
+    <p>We craft modern websites, IT solutions, and digital experiences for businesses.</p>
   </section>
 
+  <!-- Services Section -->
   <section id="services">
     <h2>Our Services</h2>
-    <ul>
-      <li>Software Development</li>
-      <li>AI & Machine Learning</li>
-      <li>Tech Consultation</li>
-    </ul>
+    <div class="services-container">
+      <div class="service-card">Website Development</div>
+      <div class="service-card">App Development</div>
+      <div class="service-card">Custom IT Solutions</div>
+    </div>
   </section>
 
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <h2>Our Projects</h2>
+    <div class="portfolio-container">
+      <div class="project-card">Project 1</div>
+      <div class="project-card">Project 2</div>
+      <div class="project-card">Project 3</div>
+    </div>
+  </section>
+
+  <!-- Contact Section with Google Form -->
   <section id="contact">
     <h2>Contact Us</h2>
-    <form id="contactForm">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-    <p id="formMessage"></p>
+    <iframe src="YOUR_GOOGLE_FORM_URL_HERE" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
   </section>
 
+  <!-- Footer -->
   <footer>
-    <p>© 2026 Nas Tech Innovations</p>
+    <p>© 2026 Nas Tech Innovations | Follow us on 
+      <a href="#">LinkedIn</a> | <a href="#">Twitter</a>
+    </p>
   </footer>
-
   <script src="script.js"></script>
 </body>
 </html>
