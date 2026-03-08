@@ -1,8 +1,9 @@
-const form = document.getElementById("contactForm");
-const message = document.getElementById("formMessage");
-
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  message.textContent = "Thank you! Your message has been sent.";
-  form.reset();
+// Optional: simple scroll animation
+const sections = document.querySelectorAll("section");
+window.addEventListener("scroll", () => {
+  sections.forEach(sec => {
+    const top = sec.getBoundingClientRect().top;
+    if(top < window.innerHeight - 100) sec.style.opacity = 1;
+    else sec.style.opacity = 0.3;
+  });
 });
